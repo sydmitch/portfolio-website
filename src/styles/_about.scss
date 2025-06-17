@@ -1,0 +1,78 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  animation: fadeInUp 0.6s ease-in-out both;
+
+  .about-heading {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(to right, #7f5af0, #00c6ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .about-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.25rem;
+    color: var(--text-color);
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+
+  .values-list,
+  .hobbies-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    
+    @media (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .icon {
+        margin-right: 0.75rem;
+        color: #7f5af0;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

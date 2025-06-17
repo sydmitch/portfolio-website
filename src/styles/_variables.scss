@@ -1,0 +1,30 @@
+:root {
+  --bg-light: #f9f9fb;
+  --bg-dark: #121212;
+  --text-light: #1f1f1f;
+  --text-dark: #f0f0f0;
+  --accent: #7c3aed;
+
+  --card-bg: #fff;
+  --card-border: #ddd;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+
+  --bg-gradient-light: linear-gradient(135deg, #fefefe 0%, #f0f4ff 100%);
+  --bg-gradient-dark: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+}
+
+body.dark {
+  --card-bg: #1e1e1e;
+  --card-border: #333;
+  --accent: #a78bfa;
+  --text-light: var(--text-dark);
+  --bg-gradient-light: var(--bg-gradient-dark);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

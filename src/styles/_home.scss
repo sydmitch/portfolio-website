@@ -1,0 +1,88 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  .home-intro {
+    max-width: 600px;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      .typed-cursor {
+        color: var(--text-color);
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: var(--text-color);
+    }
+
+    .profile-image {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1.2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        background-color: var(--link-color);
+        color: #fff;
+
+        &:hover {
+          opacity: 0.85;
+        }
+
+        &.outline {
+          background: transparent;
+          border: 2px solid var(--link-color);
+          color: var(--link-color);
+
+          &:hover {
+            background-color: var(--link-color);
+            color: var(--accent);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-intro {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+}

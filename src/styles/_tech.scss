@@ -1,0 +1,44 @@
+.tech {
+  text-align: center;
+  padding: 3rem 1.5rem;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-intro {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+
+  .tech-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+  }
+
+  .tech-card {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    svg {
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    }
+  }
+}
