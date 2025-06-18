@@ -1,5 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -27,10 +28,9 @@ export default function Home() {
         <p>
           A software developer passionate about building clean, functional, and accessible web applications.
         </p>
-
         <div className="cta-buttons">
-          <a href="/projects" className="btn outline">View Projects</a>
-          <a href="/contact" className="btn outline">Contact Me</a>
+          <Link to="/projects" className="btn outline">View Projects</Link>
+          <Link to="/contact" className="btn outline">Contact Me</Link>
         </div>
       </div>
     </section>
