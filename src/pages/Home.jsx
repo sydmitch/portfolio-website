@@ -8,18 +8,20 @@ export default function Home() {
       <div className="home-intro">
         <img src="/Sydney-Headshot.jpg" alt="Sydney Mitchell" className="profile-image" />
 
-        <h1>
+        <h1 className='brand'>
           Hi, I'm{' '}
-          <Typed
-            strings={[
-              'Sydney Mitchell',
-              'a Full-Stack Developer',
-              'a Creative Technologist'
-            ]}
-            typeSpeed={60}
-            backSpeed={40}
-            loop
-          />
+          <span className="typed-gradient">
+            <Typed
+              strings={[
+                'Sydney Mitchell',
+                'a Full-Stack Developer',
+                'a Creative Technologist'
+              ]}
+              typeSpeed={60}
+              backSpeed={40}
+              loop
+            />
+          </span>
         </h1>
         <p className="tagline">
           Based in OKC • Lover of clean code, coffee, and camera rolls.

@@ -14,13 +14,39 @@
 
   .brand {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--accent);
+    font-weight: 700;
+    background: linear-gradient(90deg, #a78bfa, #f472b6, #60a5fa);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
 
-    &:hover {
-      opacity: 0.8;
+    animation: gradientShift 6s ease infinite, fadeIn 1s ease forwards;
+    opacity: 0;
+    display: inline-block;
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
     }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .brand:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
   }
 
   .nav-links {
