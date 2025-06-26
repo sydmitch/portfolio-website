@@ -17,7 +17,15 @@ export default function Projects() {
       description: 'Library management system with full CRUD, authentication, and PostgreSQL database.',
       tech: 'Node.js, Express, PostgreSQL',
       link: 'https://github.com/sydmitch/Unit2.PuppyBowl.Core.Starter'
+    },
+    {
+      title: 'Hunter Battery Website',
+      description: 'A modernized website for a regional battery distributor built using Wix. I updated product pages, improved mobile responsiveness, and optimized layout and copy for seasonal promotions. The site now supports Google Ads campaigns and includes targeted landing pages for golf cart and automotive batteries.',
+      role: 'Web Designer & Site Editor – updated layout, product copy, mobile styling, and promotional content',
+      tech: 'Wix, SEO, Google Ads, Copywriting, Responsive Design',
+      live: 'https://www.hunterbattery.net/'
     }
+
   ];
 
   return (
