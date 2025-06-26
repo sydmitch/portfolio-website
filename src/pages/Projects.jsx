@@ -34,10 +34,19 @@ export default function Projects() {
       <div className="project-list">
         {projects.map((project, idx) => (
           <div key={idx} className="project-card">
+            {project.image && (
+              <img src={project.image} alt={`${project.title} screenshot`} />
+            )}
             <h3>{project.title}</h3>
             <p>{project.description}</p>
+            {project.role && <p><strong>Role:</strong> {project.role}</p>}
             <p><strong>Tech:</strong> {project.tech}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            {project.live && (
+              <a href={project.live} target="_blank" rel="noopener noreferrer">Live Site</a>
+            )}
+            {project.link && (
+              <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            )}
           </div>
         ))}
       </div>
