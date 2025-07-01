@@ -8,8 +8,8 @@ export default function Contact() {
         Let’s build something meaningful together — freelance projects, collaboration, or just tech talk.
       </p>
       <div className="contact-card">
-        <a href="mailto:syd.a.mitchell@gmail.com" className="contact-link">
-          <FaEnvelope /> syd.a.mitchell@gmail.com
+        <a href="mailto:syd.a.mitch@gmail.com" className="contact-link">
+          <FaEnvelope /> syd.a.mitch@gmail.com
         </a>
         <a href="https://github.com/sydmitch" target="_blank" className="contact-link">
           <FaGithub /> @sydmitch
