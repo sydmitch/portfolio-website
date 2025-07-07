@@ -4,7 +4,7 @@ export default function Projects() {
       title: 'DiscogMVP',
       description: 'A full-stack e-commerce prototype for discovering and collecting music releases. Users can browse a catalog of albums, view detailed release info, and build a personalized wishlist. Built with the PERN stack (PostgreSQL, Express, React, Node.js), the app includes secure user authentication (JWT), admin inventory controls, and a Stripe-integrated checkout experience. Developed collaboratively as a capstone project focused on clean UI and scalable backend architecture.',
       tech: 'React, Node.js, Express, PostgreSQL, JWT Auth',
-      link: 'https://github.com/2410-Capstone/DiscogMVP'
+      link: 'https://discog-mv-producer.vercel.app/'
     },
         {
       title: 'Hunter Battery Website',
@@ -32,7 +32,7 @@ export default function Projects() {
               <a href={project.live} target="_blank" rel="noopener noreferrer">Live Site</a>
             )}
             {project.link && (
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">Live Site</a>
             )}
           </div>
         ))}
